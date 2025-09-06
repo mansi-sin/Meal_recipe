@@ -1,0 +1,226 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+/* Title */
+.head {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  color: #1a1a1a;
+}
+
+/* Centered Page Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search Bar */
+.serachBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.serachBar input {
+  padding: 12px 16px;
+  flex: 1;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 250px;
+}
+
+.serachBar button {
+  padding: 12px 24px;
+  background-color: #327b78;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.serachBar button:hover {
+  background-color: #ff8c00;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Meals Grid */
+.meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  justify-items: center;
+}
+
+/* Meal Card */
+.mealImg {
+  width: 100%;
+  max-width: 320px;
+  background-color: #fefefe;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.mealImg:hover {
+  transform: translateY(-5px);
+}
+
+.mealImg img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mealImg p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #333;
+}
+
+/* Yellow Recipe Button */
+.mealImg button {
+  background-color:#327b78;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mealImg button:hover {
+  background-color: #ff8c00;
+}
+/* Add this to your MealInfo.css or global stylesheet */
+.msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #000;
+}
+
+.msg img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.info button {
+  padding: 10px 20px;
+  background-color: #327b78;
+  border: none;
+  border-radius: 8px;
+  color: rgb(252, 251, 251);
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.info p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .serachBar {
+    flex-direction:row;
+
+  }
+
+  .serachBar input {
+    width: 100%;
+  }
+
+ 
+  
+ .meals {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+}
+
+  .msg {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .msg img{
+    width:100%; 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;    
+  }
+
+  .info {
+    text-align: left;
+    flex: 1;
+  }
+
+
