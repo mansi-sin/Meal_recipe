@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Meal_recipe/',  // important for GitHub Pages
+  base: process.env.DEPLOY_TARGET === 'github' ? '/Meal_recipe/' : '/',
 });
